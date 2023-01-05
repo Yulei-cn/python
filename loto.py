@@ -7,11 +7,16 @@ loto = np.random.choice(x,5,replace=False)
 
 print (loto)
 nrb = int(input("entrez combien "))
-nombre=0
+
+resulat=[]
 for i in range (nrb):
     x1 = list(range(1,45))
     loto1 = np.random.choice(x,5,replace=False)
-    occu = trouve
+    for i in loto:
+        if i in loto1:
+            resulat.append(i)
 
+        
 print("!!!!loto!!!!")
-print(nombre)
+print(len(resulat))
+print(resulat)
