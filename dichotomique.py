@@ -1,5 +1,5 @@
 #https://www.runoob.com/python3/python-binary-search.html
-#dichotomique
+#dichotomique  récursif
 
 # 返回 x 在 arr 中的索引，如果不存在返回 -1
 def binarySearch (arr, l, r, x): 
@@ -36,3 +36,7 @@ if result != -1:
     print ("元素在数组中的索引为 %d" % result )
 else: 
     print ("元素不在数组中")
+
+    
+#dichotomique    itératif
+
