@@ -6,3 +6,30 @@ paris possibles ?
 
 Un dimanche matin un parieur prend 5000 paris différents pour le tiercé de
 l’après-midi. Que peut on dire du nombre de chevaux engagés dans la course ?
+19*18*17>5000
+donc il y a 19 de chevaux engagés dans la course
+
+Exercice 4
+Un joueur lance cinq pièces de monnaie. Quelle est la probabilité (a) d’avoir uniquement
+des faces, (b) d’avoir exactement trois faces, (c) d’avoir au moins trois faces ? On considère ici
+PFFFP et FFFPP comme des résultats distincts.
+
+import numpy as np 
+from random import randint
+
+iterations = 5  # 设置循环次数 
+x = np.arange(iterations) # x = [0,1, 2, ...9999]
+y = np.zeros(iterations) # y = [0, 0, ....0]，1万个0
+head = 0 # 正面朝上计数
+ufaces=0
+tfaces=0
+for i in range(iterations):
+    result = randint(0,1) # 随机生成结果，在这里将1 当做是正面
+    if result == 1: 
+        head+= 1    # 正面次数加1
+    y[i]=head/(i+1) # 统计该次数下正面出现的频率
+    if y[i] == 1 :
+        ufaces += 1
+print(y)
+print(head)
+print(ufaces/5)
