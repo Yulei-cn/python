@@ -17,7 +17,7 @@ for i in range(5):
     m+=1
 
 if vaild == False:
-    print("il est pas amdis")
+    print("NON amdis")
 else:    
     moy=sumn/sumc   
     print("moyenne générale :",moy)
