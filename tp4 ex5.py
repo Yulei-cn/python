@@ -1,11 +1,11 @@
 
 while True:
-    s1 = input("Donnez date (dd mm yyyy): ")
+    s1 = input("Donnez date (dd  mm  yyyy): ")
     date = s1.split(" ")
     day = int(date[0])
     month = int(date[1])
     yyyy = int(date[2])
-    if 0<day<32 and 0<month<13 and 0<yyyy<10000:
+    if 0<day<32 and 0<month<13 and 0<yyyy:
         break
     else:
         print("pas au bon format:")

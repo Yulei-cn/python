@@ -8,3 +8,9 @@ for i in range(n):
     print(tab)
 
 print(sorted(tab))
+#faire l'ordre croissant
+
+tab.sort()
+print(tab)
+#La réorganisation du contenu du conteneur 
+#modifiera l'ordre d'origine dans le conteneur
